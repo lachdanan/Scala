@@ -44,12 +44,12 @@ object Lists {
    * @throws java.util.NoSuchElementException if `xs` is an empty list
    */
   def max(xs: List[Int]): Int = {
-      def loop(largest: Int, tail: List[Int]): Int = {
-        if(tail.isEmpty) largest else loop(theLargest(largest, tail.head), tail.tail)
-      }
-      def theLargest(number1: Int, number2: Int) = {
-        if(number1 > number2) number1 else number2
-      }
+    def loop(largest: Int, tail: List[Int]): Int = {
+      if(tail.isEmpty) largest else loop(theLargest(largest, tail.head), tail.tail)
+    }
+    def theLargest(number1: Int, number2: Int) = {
+      if(number1 > number2) number1 else number2
+    }
     loop(xs.head, xs.tail)
   }
 }

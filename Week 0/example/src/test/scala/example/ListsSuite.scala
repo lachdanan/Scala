@@ -47,7 +47,7 @@ class ListsSuite extends FunSuite {
    * This allows tests to be written in a more readable manner:
    */
   test("one plus one is three?") {
-    assert(1 + 1 == 3) // This assertion fails! Go ahead and fix it.
+    assert(1 + 1 == 2) // This assertion fails! Go ahead and fix it.
   }
 
 
@@ -61,7 +61,7 @@ class ListsSuite extends FunSuite {
    * }}}
    *
    * This situation can be improved by using a special equality operator
-   * `===` instead of `==` (this is only possible in ScalaTest). So if you
+   * === instead of == (this is only possible in ScalaTest). So if you
    * run the next test, ScalaTest will show the following output:
    *
    * {{{
@@ -69,19 +69,19 @@ class ListsSuite extends FunSuite {
    *    [info]   2 did not equal 3 (ListsSuite.scala:67)
    * }}}
    *
-   * We recommend to always use the `===` equality operator when writing tests.
+   * We recommend to always use the === equality operator when writing tests.
    */
   test("details why one plus one is not three") {
-    assert(1 + 1 === 3) // Fix me, please!
+    assert(1 + 1 === 2) // Fix me, please!
   }
 
 
   /**
    * In order to test the exceptional behavior of a methods, ScalaTest offers
-   * the `intercept` operation.
+   * the 'intercept' operation.
    *
-   * In the following example, we test the fact that the method `intNotZero`
-   * throws an `IllegalArgumentException` if its argument is `0`.
+   * In the following example, we test the fact that the method intNotZero
+   * throws an 'IllegalArgumentException' if its argument is '0'.
    */
   test("intNotZero throws an exception if its argument is 0") {
     intercept[IllegalArgumentException] {
@@ -98,7 +98,7 @@ class ListsSuite extends FunSuite {
   /**
    * Now we finally write some tests for the list functions that have to be
    * implemented for this assignment. We fist import all members of the
-   * `List` object.
+   * 'List' object.
    */ 
   import Lists._
   
@@ -110,8 +110,8 @@ class ListsSuite extends FunSuite {
    * In particular, write tests for corner cases: negative numbers, zeros,
    * empty lists, lists with repeated elements, etc.
    *
-   * It is allowed to have multiple `assert` statements inside one test,
-   * however it is recommended to write an individual `test` statement for
+   * It is allowed to have multiple 'assert' statements inside one test,
+   * however it is recommended to write an individual test' statement for
    * every tested aspect of a method.
    */
   test("sum of a few numbers") {
